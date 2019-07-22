@@ -24,7 +24,7 @@ public class BasePageClass {
         MyWebDriverClass.ojidalkaMethod(element).click();
     }
 
-
+    @Step("Экшен клике активен")
     public void zapTextPoley(WebElement element, String s){
         Actions actions = new Actions(MyWebDriverClass.getDriver());
         actions.moveToElement(element).click().perform();

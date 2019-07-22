@@ -16,11 +16,11 @@ public class PolisPageAgreement extends BasePageClass{
     @FindBy(xpath = "//span[@ng-click='save()'][text()='Оформить']")
     private WebElement acceptBtn;
 
-    @Step("Пятый шаг")
+    @Step("Пятый шаг - достаточно")
     public void EnughBtn(){
         ClickableElement(enoughBtn);
     }
-    @Step("Шестой шаг")
+    @Step("Шестой шаг - клик по кнопке оформить")
     public void AcceptBtn(){
         ClickableElement(acceptBtn);
     }

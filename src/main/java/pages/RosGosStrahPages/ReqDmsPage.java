@@ -22,6 +22,7 @@ public class ReqDmsPage extends BasePageClass{
         String str = "ДМС " + "\u2014" +" добровольное медицинское страхование";
         Assert.assertEquals("ДМС —"  +" добровольное медицинское страхование", CheckDMSSentence());
     }
+    @Step("Отправить заявку")
     public void OtprZayavku(){
         ClickableElement(otprZayavku);
     }

@@ -6,7 +6,6 @@ import io.qameta.allure.junit4.DisplayName;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebElement;
-import pages.BasePageClass;
 import pages.MyWebDriverClass;
 import pages.SberBankPages.MainSberPage;
 import pages.SberBankPages.PersonalityPage;
@@ -41,7 +40,7 @@ public class SberBankTestPages {
 
          PersonalityPage personalityPage = new PersonalityPage();//3
 
-         List<String> znacheniyaDliaRegList = personalityPage.startZnach();
+         List<String> znacheniyaDliaRegList = personalityPage.testStartValues();
          List<WebElement> massivWebElemDlyaRegi = personalityPage.arrElemN();
 
          personalityPage.zapolnPoley(massivWebElemDlyaRegi,znacheniyaDliaRegList);

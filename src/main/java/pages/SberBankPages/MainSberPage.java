@@ -30,7 +30,7 @@ public class MainSberPage extends BasePageClass{
     public void Puteshestviya(){
         ClickableElement(puteshestviya);
     }
-    @Step("Проверка")
+    @Step("Третий шаг доп- Проверка")
     public void CheckStrah(){
         Assert.assertEquals("\n Отсутствует поле с ",
                 "Страхование путешественников",checkStrah.getText());

@@ -18,7 +18,7 @@ public  class MyWebDriverClass {
 
   private static WebDriver driver;
   private static WebDriverWait webDriverWait;
-
+@Step("Старт окна")
     public static void StartingBrowse(String URLelem){
         System.setProperty("webdriver.chrome.driver","src/driver/chromedriver.exe");
         getDriver().get(URLelem);

@@ -14,8 +14,7 @@ import java.util.List;
  */
 public class PersonalityPage extends BasePageClass{
 
-    public List<String> startZnach(){
-
+    public List<String> testStartValues(){
             List<String> arr = new ArrayList<String>();
             arr.add("Петров");
             arr.add("Петр");
@@ -116,11 +115,11 @@ public class PersonalityPage extends BasePageClass{
     public void sravnZnachPol(){
         Assert.assertEquals("\n Error","Заполнены не все обязательные поля", ErrorTextField().getText());
     }
-
+    @Step("Первый шаг - отправить кнопка")
     public WebElement ClickSaveBtn(){
         return saveBtn;
     }
-    @Step("Первый шаг - старт")
+    @Step("Первый шаг - продолжить кнопка")
     public void SaveBtn(){
         ClickableElement(ClickSaveBtn());
     }
