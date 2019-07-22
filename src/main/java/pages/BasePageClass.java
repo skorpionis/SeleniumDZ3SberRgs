@@ -31,18 +31,13 @@ public class BasePageClass {
         element.sendKeys(s);
     }
 
-    public void zapolnTekushihPoley(List<WebElement> arr, int i){
-        ClickableElement(arr.get(i));
-    }
     @Step("Filling fields with some values")
     public void zapolnPoley(List<WebElement> arr, List<String> arrStr){
         for (int i = 0; i < arrStr.size(); i++) {
             zapTextPoley(arr.get(i),arrStr.get(i));
         }
     }
-    public void sravnElem(WebElement element, String str){
-        Assert.assertEquals(element, MyWebDriverClass.ojidalkaMethod(element).getText());
-    }
+
     @Step("Check field for values")
     public void poluchenieIzSravnenia(List<String> arrStr, List<WebElement> arrStrAct){
         for (int i = 0; i <arrStr.size() ; i++) {

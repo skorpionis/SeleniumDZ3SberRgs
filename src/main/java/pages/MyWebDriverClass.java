@@ -41,7 +41,6 @@ public  class MyWebDriverClass {
         }
     }
 
-
     public static WebDriverWait getWebDriverWait() {
         webDriverWait = new WebDriverWait(getDriver(),7, 300);
         return webDriverWait;
