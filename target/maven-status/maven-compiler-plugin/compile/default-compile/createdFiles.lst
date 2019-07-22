@@ -1,0 +1,10 @@
+pages\SberBankPages\MainSberPage.class
+TestPages\SberBankTestPages.class
+pages\RosGosStrahPages\ReqDmsPage.class
+pages\RosGosStrahPages\DMSpage.class
+pages\MyWebDriverClass.class
+pages\BasePageClass.class
+TestPages\RgsTestPages.class
+pages\SberBankPages\PolisPageAgreement.class
+pages\RosGosStrahPages\MainRgsPage.class
+pages\SberBankPages\PersonalityPage.class
