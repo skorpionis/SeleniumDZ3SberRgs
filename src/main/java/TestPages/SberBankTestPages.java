@@ -6,7 +6,7 @@ import io.qameta.allure.junit4.DisplayName;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebElement;
-import pages.MyWebDriverClass;
+import pages.CORE.MyWebDriverClass;
 import pages.SberBankPages.MainSberPage;
 import pages.SberBankPages.PersonalityPage;
 import pages.SberBankPages.PolisPageAgreement;
@@ -22,7 +22,6 @@ public class SberBankTestPages {
     @Before public void StartWeb(){
         MyWebDriverClass.StartingBrowse("http://www.sberbank.ru/ru/person");
     }
-
 
     @Test
     @DisplayName("Sbertest")

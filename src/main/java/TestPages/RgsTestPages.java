@@ -2,10 +2,10 @@ package TestPages;
 
 import io.qameta.allure.Step;
 import io.qameta.allure.junit4.DisplayName;
-import org.junit.BeforeClass;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebElement;
-import pages.MyWebDriverClass;
+import pages.CORE.MyWebDriverClass;
 import pages.RosGosStrahPages.DMSFormPage;
 import pages.RosGosStrahPages.MainRgsPage;
 import pages.RosGosStrahPages.ReqDmsPage;
@@ -16,8 +16,8 @@ import java.util.List;
  * Created by Ariec on 20.07.2019.
  */
 public class RgsTestPages {
-    @Step("Главная страница http://www.rgs.ru")
-    @BeforeClass
+    @Step(" http://www.rgs.ru")
+    @Before
     public static void initRsg(){
         MyWebDriverClass.StartingBrowse("https://www.rgs.ru");
     }

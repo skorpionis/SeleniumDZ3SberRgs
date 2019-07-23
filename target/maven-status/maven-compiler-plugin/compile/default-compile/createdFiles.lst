@@ -1,7 +1,7 @@
 pages\SberBankPages\MainSberPage.class
 TestPages\SberBankTestPages.class
 pages\RosGosStrahPages\ReqDmsPage.class
-pages\RosGosStrahPages\DMSpage.class
+pages\RosGosStrahPages\DMSFormPage.class
 pages\MyWebDriverClass.class
 pages\BasePageClass.class
 TestPages\RgsTestPages.class

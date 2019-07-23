@@ -1,4 +1,4 @@
-package pages;
+package pages.CORE;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,6 +27,7 @@ public  class MyWebDriverClass {
         getDriver().manage().timeouts().implicitlyWait(40,TimeUnit.SECONDS);
     }
     public static WebDriver getDriver() {
+        if(driver==null)
         driver = new ChromeDriver();
         return driver;
     }
@@ -42,7 +43,8 @@ public  class MyWebDriverClass {
     }
 
     public static WebDriverWait getWebDriverWait() {
-        webDriverWait = new WebDriverWait(getDriver(),7, 300);
+        if(webDriverWait==null)
+        webDriverWait = new WebDriverWait(getDriver(),15, 300);
         return webDriverWait;
     }
     @Step("Переход на новую страницу")

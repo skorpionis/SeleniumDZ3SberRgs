@@ -4,7 +4,7 @@ import io.qameta.allure.Step;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import pages.BasePageClass;
+import pages.CORE.BasePageClass;
 
 /**
  * Created by Ariec on 21.07.2019.

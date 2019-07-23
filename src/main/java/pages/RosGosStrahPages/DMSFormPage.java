@@ -5,8 +5,8 @@ import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import pages.BasePageClass;
-import pages.MyWebDriverClass;
+import pages.CORE.BasePageClass;
+import pages.CORE.MyWebDriverClass;
 
 import java.util.ArrayList;
 import java.util.List;
